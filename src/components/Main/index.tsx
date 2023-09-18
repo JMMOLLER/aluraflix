@@ -3,7 +3,7 @@ import videoTop from "../../assets/db/one-piece/trailer.webm";
 import imgTop from "../../assets/db/one-piece/hero.jpg";
 import banner from "../../assets/db/one-piece/banner.png";
 import { Button } from '../Button'
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Main = styled.main`
   width: 100%;
@@ -31,6 +31,7 @@ const Hero = styled.div<{ $showVideo?: boolean }>`
   width: 100%;
   height: 100%;
   position: relative;
+  z-index: 1;
 
   .hero {
     position: absolute;
@@ -57,6 +58,11 @@ const FeatureContent = styled.div`
   position: absolute;
   left: 60px;
   z-index: 0;
+
+  .buttons_container {
+    display: flex;
+    gap: 1rem;
+  }
 `;
 
 const FeatureInfo = styled.div`
@@ -87,6 +93,13 @@ const FeatureInfo = styled.div`
 export default function index() {
   const [showVideo, setShowVideo] = useState(false);
 
+  useEffect(() => {
+    window.addEventListener('scroll', function() {
+      const header = document.querySelector('header') as HTMLElement;
+      header.classList.toggle('scrolling', window.scrollY > 0);
+    });
+  }, []);
+
   const handleVideo = (e: React.SyntheticEvent<HTMLVideoElement, Event>) => {
     e.stopPropagation();
     // setShowVideo(!showVideo);
@@ -112,7 +125,10 @@ export default function index() {
                 esta adaptación del popular manga.
               </p>
             </FeatureInfo>
-            <Button>Reproducir</Button>
+            <div className="buttons_container">
+              <Button isInfo={false}>Reproducir</Button>
+              <Button isInfo={true}>Más información</Button>
+            </div>
           </FeatureContent>
         </Hero>
         <video onCanPlay={handleVideo} onEnded={() => setShowVideo(!showVideo)} src={videoTop}></video>

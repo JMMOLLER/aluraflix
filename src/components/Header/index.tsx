@@ -13,8 +13,14 @@ const Header = styled.header`
     rgba(0, 0, 0, 0.7) 10%,
     transparent
   );
-  z-index: 1;
+  transition: background-color 0.5s ease;
+  z-index: 2;
+
+  &.scrolling {
+    background-color: #000;
+  }
 `;
+
 const LogoContainer = styled.div`
   width: 92.5px;
   margin-right: 25px;
@@ -38,6 +44,16 @@ const Nav = styled.nav`
       font-size: 14px;
       margin-left: 20px;
       color: #e5e5e5;
+      
+      .primary-nav__link {
+        transition: color .4s;
+      }
+      .primary-nav__link.active {
+        color: #fff;
+      }
+      .primary-nav__link:hover{
+        color: #b3b3b3;
+      }
     }
   }
 `;
@@ -50,13 +66,13 @@ const SecondaryNav = styled.div`
   right: 4%;
   gap: 15px;
 
-  a {
+  .secundary-nav__link {
     width: 36px;
     height: 29.8px;
     margin-top: 4.2px;
     padding: 0 6px 3px 6px;
   }
-  a:last-child {
+  .secundary-nav__link:last-child {
     margin: 0;
   }
 `;
@@ -70,27 +86,27 @@ export default function index() {
       <Nav>
         <ul>
           <li>
-            <a href="#">Inicio</a>
+            <a className="primary-nav__link active" href="#">Inicio</a>
           </li>
           <li>
-            <a href="#">Séries</a>
+            <a className="primary-nav__link" href="#">Séries</a>
           </li>
           <li>
-            <a href="#">Películas</a>
+            <a className="primary-nav__link" href="#">Películas</a>
           </li>
           <li>
-            <a href="#">Novedades populares</a>
+            <a className="primary-nav__link" href="#">Novedades populares</a>
           </li>
         </ul>
       </Nav>
       <SecondaryNav>
-        <a href="#">
+        <a className="secundary-nav__link" href="#">
           <img src="/icons/search.svg" alt="search" />
         </a>
-        <a href="#">
+        <a className="secundary-nav__link" href="#">
           <img src="/icons/bell.svg" alt="bell" />
         </a>
-        <a href="#">
+        <a className="secundary-nav__link" href="#">
           <img src="/icons/avatar.svg" alt="user" />
         </a>
       </SecondaryNav>
