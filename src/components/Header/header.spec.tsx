@@ -1,5 +1,5 @@
 import { describe, expect, test, beforeAll } from 'vitest'
-import { render, screen, fireEvent } from '@testing-library/react'
+import { render, screen } from '@testing-library/react'
 import Header from './index'
 
 describe('Header', () => {
