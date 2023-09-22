@@ -56,6 +56,31 @@
       "description": "Cuerpo en Llamas",
       "image": "/src/assets/db/cuerpo-en-llamas/thumbnail.jpg",
       "category": ["Series","Agregados recientemente"]
+    },{
+      "title": "Guerra mundial Z",
+      "description": "Cuando una pandemia de zombis amenaza con destruir a la humanidad, un antiguo investigador de la ONU emprende una peligrosa búsqueda por el mundo para dar con el origen del virus.",
+      "image": "/src/assets/db/world-war-z/thumbnail.jpg",
+      "category": ["Películas"]
+    },{
+      "title": "Baki Hanma",
+      "description": "Para perfeccionarse y superar a su poderoso padre, Baki ingresa en la Prisión Estatal de Arizona y se enfrenta a un famoso recluso conocido como señor Unchained.",
+      "image": "/src/assets/db/baki-hanma/thumbnail.jpg",
+      "category": ["Series","Animes"]
+    },{
+      "title": "Demon Slayer",
+      "description": "Tanjiro emprende un viaje arriesgado para buscar una cura a la maldición de su hermana y vengar a su familia asesinada por un demonio.",
+      "image": "/src/assets/db/demon-slayer/thumbnail.jpg",
+      "category": ["Series","Animes"]
+    },{
+      "title": "Ajin",
+      "description": "Un adolescente inmortal se convierte en fugitivo y se ve obligado a tomar una decisión que cambiará su destino.",
+      "image": "/src/assets/db/ajin/thumbnail.jpg",
+      "category": ["Series","Animes"]
+    }, {
+      "title": "Breaking Bad",
+      "description": "Un profesor de química de secundaria con cáncer terminal comienza a fabricar y vender metanfetamina para asegurar el futuro de su familia.",
+      "image": "/src/assets/db/breaking-bad/thumbnail.webp",
+      "category": ["Series"]
     }
   ]
 }
