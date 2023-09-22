@@ -7,7 +7,7 @@ export default function index(path: string) {
 
   useEffect(() => {
     const fetchData = async () => {
-      const response = await fetch(`http://localhost:3000/${path}`);
+      const response = await fetch(`${import.meta.env.VITE_API_URL}${path}`);
       const data = await response.json();
       setData(data);
       setLoading(false);

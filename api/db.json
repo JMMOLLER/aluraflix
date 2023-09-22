@@ -81,6 +81,11 @@
       "description": "Un profesor de química de secundaria con cáncer terminal comienza a fabricar y vender metanfetamina para asegurar el futuro de su familia.",
       "image": "/src/assets/db/breaking-bad/thumbnail.webp",
       "category": ["Series"]
+    }, {
+      "title": "Zoom 100",
+      "description": "Zoom 100",
+      "image": "/src/assets/db/zoom-100/thumbnail.jpg",
+      "category": ["Animes","Agregados recientemente", "Series"]
     }
   ]
 }

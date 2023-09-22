@@ -13,7 +13,7 @@ function App() {
       const categories: Array<string> = data;
       const fetchByCategory = async (category: string) => {
         try {
-          const response = await fetch(`http://localhost:3000/videos?category_like=${category}`);
+          const response = await fetch(`${import.meta.env.VITE_API_URL}videos?category_like=${category}`);
           const data = await response.json();
           return data;
         } catch (error) {
