@@ -1,10 +1,13 @@
 import styled from "styled-components";
 import videoTop from "../../assets/db/one-piece/trailer.webm";
 import Hero from "../Hero";
+import SliderContent from "../SliderContent";
 import { useEffect, useState } from "react";
+import "./main.css"
 
 const Main = styled.main`
   width: 100%;
+  position: relative;
 `;
 const Feature = styled.div`
   width: 100%;
@@ -25,7 +28,11 @@ const Feature = styled.div`
   }
 `;
 
-export default function index() {
+interface MainProps {
+  content: CategoryContent[];
+}
+
+export default function index({ content }: MainProps) {
   const [showVideo, setShowVideo] = useState(false);
 
   useEffect(() => {
@@ -52,6 +59,11 @@ export default function index() {
         <Hero showVideo={showVideo} />
         <video onCanPlay={handleVideo} onEnded={handleEnded} src={videoTop} muted={true}></video>
       </Feature>
+      <div className="container_slider_content">
+        {content.map((item, index) => (
+          <SliderContent key={index} title={item.title} payload={item.payload} />
+        ))}
+      </div>
     </Main>
   );
 }

@@ -1,0 +1,61 @@
+{
+  "categories": [
+    "Agregados recientemente",
+    "Películas",
+    "Series",
+    "Animes"
+  ],
+  "videos": [
+    {
+      "title": "Scream (Grita)",
+      "description": "Scream",
+      "image": "/src/assets/db/scream/thumbnail.jpg",
+      "category": ["Películas","Agregados recientemente"]
+    },{
+      "title": "Scissor Seven",
+      "description": "Scissor Seven",
+      "image": "/src/assets/db/scissor-seven/thumbnail.jpg",
+      "category": ["Series","Agregados recientemente","Animes"]
+    },{
+      "title": "Hermanos de sangre",
+      "description": "Band of brothers",
+      "image": "/src/assets/db/band-of-brothers/thumbnail.jpg",
+      "category": ["Películas","Agregados recientemente"]
+    },{
+      "title": "One Piece",
+      "description": "One Piece",
+      "image": "/src/assets/db/one-piece/thumbnail.jpg",
+      "category": ["Series","Agregados recientemente"]
+    },{
+      "title": "Mi querida niña",
+      "description": "My Dear Girl",
+      "image": "/src/assets/db/my-dear-girl/thumbnail.jpg",
+      "category": ["Series","Agregados recientemente"]
+    },{
+      "title": "Ven a jugar",
+      "description": "Come to Play",
+      "image": "/src/assets/db/come-to-play/thumbnail.jpg",
+      "category": ["Películas","Agregados recientemente"]
+    },{
+      "title": "Secuestro en vivo",
+      "description": "Kidnapping Live",
+      "image": "/src/assets/db/kidnapping-live/thumbnail.jpg",
+      "category": ["Películas","Agregados recientemente"]
+    },{
+      "title": "El Combate",
+      "description": "El Combate",
+      "image": "/src/assets/db/el-combate/thumbnail.jpg",
+      "category": ["Películas","Agregados recientemente"]
+    },{
+      "title": "Civiles Armados",
+      "description": "Civiles Armados",
+      "image": "/src/assets/db/civiles-armados/thumbnail.jpg",
+      "category": ["Películas","Agregados recientemente"]
+    },{
+      "title": "El cuerpo en Llamas",
+      "description": "Cuerpo en Llamas",
+      "image": "/src/assets/db/cuerpo-en-llamas/thumbnail.jpg",
+      "category": ["Series","Agregados recientemente"]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+.container_slider_content {
+  position: absolute;
+  background: rgb(0, 0, 0);
+  background: -moz-linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 50%,
+    transparent 99%
+  );
+  background: -webkit-linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 50%,
+    transparent 99%
+  );
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 50%,
+    transparent 99%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
+  width: 100%;
+  top: calc(100% - 10vw);
+  z-index: 2;
+}

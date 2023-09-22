@@ -1,0 +1,40 @@
+.slider-row {
+  margin: 3vw 0;
+  color: white;
+  background: linear-gradient(0deg, rgb(0 0 0), transparent 75%);
+}
+
+h2 {
+  margin: 0 4% .5em;
+  font-size: 1.4vw;
+  width: fit-content;
+}
+
+.swiper {
+  width: 100%;
+}
+.swiper-slide {
+  width: auto !important;
+}
+.swiper-wrapper {
+  padding-left: 4%;
+}
+.swiper-button-prev {
+  left: 0 !important;
+}
+.swiper-button-next {
+  right: 0 !important;
+}
+.swiper-button-prev, .swiper-button-next{
+  height: 100% !important;
+  width: calc(var(--swiper-navigation-size) / 44 * 40) !important;
+  transform: translateY(-37%);
+  transition: background-color .3s ease-out;
+}
+.swiper-button-prev::after, .swiper-button-next::after {
+  color: white;
+  transform: scale(0.8);
+}
+.swiper-button-prev:hover, .swiper-button-next:hover {
+  background-color: #00000070;
+}

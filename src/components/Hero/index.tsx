@@ -24,7 +24,7 @@ const StyledHero = styled.div<{ $showVideo?: boolean }>`
 `;
 const BackgroundLinear = styled.div`
   width: 1408px;
-  height: 1080px;
+  height: 950px;
   position: absolute;
   background: linear-gradient(77deg, rgba(0, 0, 0, 0.6), transparent 85%);
 `;
