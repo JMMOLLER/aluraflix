@@ -5,20 +5,25 @@ import Header from './index'
 describe('Header', () => {
 
   beforeAll(() => {
-    render(<Header />)
+    render(<Header categories={[
+      "Agregados recientemente",
+      "Películas",
+      "Series",
+      "Animes"
+    ]} />)
   })
 
   test('should exist \'inicio\' link element', () => {
     expect(screen.getByText(/inicio/i)).toBeDefined()
   })
-  test('should exist \'séries\' link element', () => {
-    expect(screen.getByText(/séries/i)).toBeDefined()
+  test('should exist \'Series\' link element', () => {
+    expect(screen.getByText(/series/i)).toBeDefined()
   })
   test('should exist \'películas\' link element', () => {
-    expect(screen.getByText(/películas/i)).toBeDefined()
+    expect(screen.getByText(/Películas/i)).toBeDefined()
   })
-  test('should exist \'novedades populares\' link element', () => {
-    expect(screen.getByText(/novedades populares/i)).toBeDefined()
+  test('should exist \'Animes\' link element', () => {
+    expect(screen.getByText(/animes/i)).toBeDefined()
   })
   test('should exist \'logo\' img element', () => {
     expect(screen.getByAltText(/logo/i)).toBeDefined()
