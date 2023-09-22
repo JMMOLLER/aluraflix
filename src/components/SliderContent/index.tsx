@@ -17,11 +17,11 @@ export default function index({ title, payload }: SliderProps) {
       <Swiper
         modules={[Navigation]}
         spaceBetween={10}
-        slidesPerView={6}
+        slidesPerView={"auto"}
         navigation={true}
         rewind={true}
       >
-        {payload.map((item, index) => (
+        {[...payload].sort(() => Math.random() - 0.5).map((item, index) => (
           <SwiperSlide key={index}>
             <Card img={item.image} />
           </SwiperSlide>

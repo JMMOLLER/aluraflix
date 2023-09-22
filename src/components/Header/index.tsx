@@ -49,7 +49,7 @@ const Nav = styled.nav`
         transition: color 0.4s;
       }
       .primary-nav__link.active {
-        color: #fff;
+        color: #fff !important;
       }
       .primary-nav__link:hover {
         color: #b3b3b3;
