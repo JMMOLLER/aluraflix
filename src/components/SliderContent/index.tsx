@@ -12,7 +12,7 @@ interface SliderProps {
 
 export default function index({ title, payload }: SliderProps) {
   return (
-    <div className="slider-row">
+    <div className="slider-row" id={title.replace(/ /g, "")}>
       <h2>{title}</h2>
       <Swiper
         modules={[Navigation]}

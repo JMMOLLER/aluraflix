@@ -14,7 +14,7 @@ const Header = styled.header`
     transparent
   );
   transition: background-color 0.5s ease;
-  z-index: 2;
+  z-index: 3;
 
   &.scrolling {
     background-color: #000;
@@ -43,15 +43,15 @@ const Nav = styled.nav`
     li {
       font-size: 14px;
       margin-left: 20px;
-      color: #e5e5e5;
-      
+      color: #c2c2c2;
+
       .primary-nav__link {
-        transition: color .4s;
+        transition: color 0.4s;
       }
       .primary-nav__link.active {
         color: #fff;
       }
-      .primary-nav__link:hover{
+      .primary-nav__link:hover {
         color: #b3b3b3;
       }
     }
@@ -77,25 +77,88 @@ const SecondaryNav = styled.div`
   }
 `;
 
-export default function index() {
+interface HeaderProps {
+  categories: string[];
+}
+
+export default function index({ categories }: HeaderProps) {
+  let content: string[] = [];
+
+  if (categories && categories.length >= 2) {
+    content = [...categories].sort(() => Math.random() - 0.5).slice(0, 3);
+  }
+
+  const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+    e.preventDefault();
+    // use scroll intoview
+    document
+      .querySelectorAll("ul li a")
+      .forEach((item) => item.classList.remove("active"));
+    let target = e.currentTarget.getAttribute("href");
+    if (!target || target === "#") target = "body";
+    const element = document.querySelector(target) as HTMLElement;
+    e.currentTarget.classList.add("active");
+    element.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <Header>
       <LogoContainer>
-        <a href="/"><img src="/logo.svg" alt="logo" /></a>
+        <a href="/">
+          <img src="/logo.svg" alt="logo" />
+        </a>
       </LogoContainer>
       <Nav>
         <ul>
           <li>
-            <a className="primary-nav__link active" href="#">Inicio</a>
+            <a
+              className="primary-nav__link active"
+              href="#"
+              onClick={handleScroll}
+            >
+              Inicio
+            </a>
           </li>
           <li>
-            <a className="primary-nav__link" href="#">Séries</a>
+            <a
+              className="primary-nav__link"
+              href={
+                categories && content.length !== 0
+                  ? "#" + content[0].replace(/ /g, "")
+                  : "#"
+              }
+              onClick={handleScroll}
+            >
+              {categories && content.length !== 0 ? content[0] : "Séries"}
+            </a>
           </li>
           <li>
-            <a className="primary-nav__link" href="#">Películas</a>
+            <a
+              className="primary-nav__link"
+              href={
+                categories && content.length !== 0
+                  ? "#" + content[1].replace(/ /g, "")
+                  : "#"
+              }
+              onClick={handleScroll}
+            >
+              {categories && content.length !== 0 ? content[1] : "Películas"}
+            </a>
           </li>
           <li>
-            <a className="primary-nav__link" href="#">Novedades populares</a>
+            <a
+              className="primary-nav__link"
+              href={
+                categories && content.length !== 0
+                  ? "#" + content[2].replace(/ /g, "")
+                  : "#"
+              }
+              onClick={handleScroll}
+            >
+              {categories && content.length !== 0
+                ? content[2]
+                : "Novedades populares"}
+            </a>
           </li>
         </ul>
       </Nav>

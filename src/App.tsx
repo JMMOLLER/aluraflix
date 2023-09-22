@@ -38,7 +38,7 @@ function App() {
 
   return (
     <>
-      <Header />
+      <Header categories={data} />
       <Main content={content} />
     </>
   )
