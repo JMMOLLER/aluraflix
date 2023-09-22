@@ -1,6 +1,4 @@
 import styled from "styled-components";
-import imgTop from "../../assets/db/one-piece/hero.jpg";
-import banner from "../../assets/db/one-piece/banner.png";
 import { Button } from '../Button'
 import { useEffect, useState } from "react";
 
@@ -99,10 +97,10 @@ export default function Hero({ showVideo }: HeroProps) {
 
   return (
     <StyledHero $showVideo={showVideo}>
-      <img className="hero" src={imgTop} alt="image hero" />
+      <img className="hero" src={"/db/one-piece/hero.jpg"} alt="image hero" />
       <BackgroundLinear />
       <FeatureContent $minimizeBanner={minimizeBanner}>
-        <img className="banner" src={banner} alt="image banner" />
+        <img className="banner" src={"/db/one-piece/banner.png"} alt="image banner" />
         <FeatureInfo $minimizeBanner={minimizeBanner}>
           <div className="container-info">
             <div className="info-header">

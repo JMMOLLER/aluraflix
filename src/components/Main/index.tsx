@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import videoTop from "../../assets/db/one-piece/trailer.webm";
 import Hero from "../Hero";
 import SliderContent from "../SliderContent";
 import { useEffect, useState } from "react";
@@ -57,7 +56,7 @@ export default function index({ content }: MainProps) {
     <Main>
       <Feature>
         <Hero showVideo={showVideo} />
-        <video onCanPlay={handleVideo} onEnded={handleEnded} src={videoTop} muted={true}></video>
+        <video onCanPlay={handleVideo} onEnded={handleEnded} src={"/db/one-piece/trailer.webm"} muted={true}></video>
       </Feature>
       <div className="container_slider_content">
         {content.map((item, index) => (

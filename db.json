@@ -9,82 +9,82 @@
     {
       "title": "Scream (Grita)",
       "description": "Scream",
-      "image": "/src/assets/db/scream/thumbnail.jpg",
+      "image": "/db/scream/thumbnail.jpg",
       "category": ["Películas","Agregados recientemente"]
     },{
       "title": "Scissor Seven",
       "description": "Scissor Seven",
-      "image": "/src/assets/db/scissor-seven/thumbnail.jpg",
+      "image": "/db/scissor-seven/thumbnail.jpg",
       "category": ["Series","Agregados recientemente","Animes"]
     },{
       "title": "Hermanos de sangre",
       "description": "Band of brothers",
-      "image": "/src/assets/db/band-of-brothers/thumbnail.jpg",
+      "image": "/db/band-of-brothers/thumbnail.jpg",
       "category": ["Películas","Agregados recientemente"]
     },{
       "title": "One Piece",
       "description": "One Piece",
-      "image": "/src/assets/db/one-piece/thumbnail.jpg",
+      "image": "/db/one-piece/thumbnail.jpg",
       "category": ["Series","Agregados recientemente"]
     },{
       "title": "Mi querida niña",
       "description": "My Dear Girl",
-      "image": "/src/assets/db/my-dear-girl/thumbnail.jpg",
+      "image": "/db/my-dear-girl/thumbnail.jpg",
       "category": ["Series","Agregados recientemente"]
     },{
       "title": "Ven a jugar",
       "description": "Come to Play",
-      "image": "/src/assets/db/come-to-play/thumbnail.jpg",
+      "image": "/db/come-to-play/thumbnail.jpg",
       "category": ["Películas","Agregados recientemente"]
     },{
       "title": "Secuestro en vivo",
       "description": "Kidnapping Live",
-      "image": "/src/assets/db/kidnapping-live/thumbnail.jpg",
+      "image": "/db/kidnapping-live/thumbnail.jpg",
       "category": ["Películas","Agregados recientemente"]
     },{
       "title": "El Combate",
       "description": "El Combate",
-      "image": "/src/assets/db/el-combate/thumbnail.jpg",
+      "image": "/db/el-combate/thumbnail.jpg",
       "category": ["Películas","Agregados recientemente"]
     },{
       "title": "Civiles Armados",
       "description": "Civiles Armados",
-      "image": "/src/assets/db/civiles-armados/thumbnail.jpg",
+      "image": "/db/civiles-armados/thumbnail.jpg",
       "category": ["Películas","Agregados recientemente"]
     },{
       "title": "El cuerpo en Llamas",
       "description": "Cuerpo en Llamas",
-      "image": "/src/assets/db/cuerpo-en-llamas/thumbnail.jpg",
+      "image": "/db/cuerpo-en-llamas/thumbnail.jpg",
       "category": ["Series","Agregados recientemente"]
     },{
       "title": "Guerra mundial Z",
       "description": "Cuando una pandemia de zombis amenaza con destruir a la humanidad, un antiguo investigador de la ONU emprende una peligrosa búsqueda por el mundo para dar con el origen del virus.",
-      "image": "/src/assets/db/world-war-z/thumbnail.jpg",
+      "image": "/db/world-war-z/thumbnail.jpg",
       "category": ["Películas"]
     },{
       "title": "Baki Hanma",
       "description": "Para perfeccionarse y superar a su poderoso padre, Baki ingresa en la Prisión Estatal de Arizona y se enfrenta a un famoso recluso conocido como señor Unchained.",
-      "image": "/src/assets/db/baki-hanma/thumbnail.jpg",
+      "image": "/db/baki-hanma/thumbnail.jpg",
       "category": ["Series","Animes"]
     },{
       "title": "Demon Slayer",
       "description": "Tanjiro emprende un viaje arriesgado para buscar una cura a la maldición de su hermana y vengar a su familia asesinada por un demonio.",
-      "image": "/src/assets/db/demon-slayer/thumbnail.jpg",
+      "image": "/db/demon-slayer/thumbnail.jpg",
       "category": ["Series","Animes"]
     },{
       "title": "Ajin",
       "description": "Un adolescente inmortal se convierte en fugitivo y se ve obligado a tomar una decisión que cambiará su destino.",
-      "image": "/src/assets/db/ajin/thumbnail.jpg",
+      "image": "/db/ajin/thumbnail.jpg",
       "category": ["Series","Animes"]
     }, {
       "title": "Breaking Bad",
       "description": "Un profesor de química de secundaria con cáncer terminal comienza a fabricar y vender metanfetamina para asegurar el futuro de su familia.",
-      "image": "/src/assets/db/breaking-bad/thumbnail.webp",
+      "image": "/db/breaking-bad/thumbnail.webp",
       "category": ["Series"]
     }, {
       "title": "Zoom 100",
       "description": "Zoom 100",
-      "image": "/src/assets/db/zoom-100/thumbnail.jpg",
+      "image": "/db/zoom-100/thumbnail.jpg",
       "category": ["Animes","Agregados recientemente", "Series"]
     }
   ]
